@@ -41,7 +41,28 @@ Original source from [PathWeaver, v2019.2.1](https://github.com/wpilibsuite/Path
   ```
 
 
-##
+## Building the project
+
+From a terminal:
+
+* Run pathweaver:
+  ```sh
+  ./gradlew.bat run
+  ```
+
+* Build the project:
+  ```sh
+  ./gradlew.bat build
+  ```
+
+  Distributable zip & tar files will be created below the following directory:
+  `\build\distributions`
+
+  You can run the project by launching the `bin/pathweaver.bat` file within the
+  archive. If it doesn't work, you likely need to address a problem with your
+  Java Runtime wither not being the right version, or not being in your Path
+  variable. Run the bat file in a command prompt to see any error messages
+  produced.
 
 
 # Original PathWeaver Readme
