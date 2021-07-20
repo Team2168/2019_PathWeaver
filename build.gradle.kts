@@ -49,13 +49,12 @@ application {
 }
 
 repositories {
+    maven {
+        url = uri("./localMaven")
+    }
     mavenCentral()
     maven {
         url = uri("https://dev.imjac.in/maven/")
-    }
-
-    maven {
-        url = uri("./localMaven")
     }
 }
 

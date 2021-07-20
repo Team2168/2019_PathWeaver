@@ -18,7 +18,7 @@ public final class Game {
 
   private static final Set<Game> games = new LinkedHashSet<>(); // NOPMD constant name
   public static final Game SKILLS_2021 = loadGameFromResource("2021-skills.json");
-  public static final Game INFINITE_RECHARGE_2020 = loadGameFromResource("2020-infiniterecharge.json");
+  public static final Game RECHARGE_2020 = loadGameFromResource("2020-infiniterecharge.json");
   public static final Game DEEP_SPACE_2019 = loadGameFromResource("2019-deepspace.json");
   public static final Game POWER_UP_2018 = loadGameFromResource("2018-powerup.json");
 
