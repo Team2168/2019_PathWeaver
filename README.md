@@ -1,5 +1,5 @@
 # 2019_PathWeaver
-a copy of the 2019 pathweaver code base, revised to include local maven deps which are avaialble on the web
+a copy of the 2019 pathweaver code base, revised to include local maven deps which are no longer available on the web
 
 Original source from [PathWeaver, v2019.2.1](https://github.com/wpilibsuite/PathWeaver/releases/tag/v2019.2.1)
 
@@ -60,7 +60,7 @@ From a terminal:
 
   You can run the project by launching the `bin/pathweaver.bat` file within the
   archive. If it doesn't work, you likely need to address a problem with your
-  Java Runtime wither not being the right version, or not being in your Path
+  Java Runtime either not being the right version, or not being in your Path
   variable. Run the bat file in a command prompt to see any error messages
   produced.
 
