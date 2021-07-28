@@ -17,6 +17,7 @@ public final class Game {
   private final Field field;
 
   private static final Set<Game> games = new LinkedHashSet<>(); // NOPMD constant name
+  public static final Game RECHARGE_2021 = loadGameFromResource("2021-infiniterecharge.json");
   public static final Game SKILLS_2021 = loadGameFromResource("2021-skills.json");
   public static final Game RECHARGE_2020 = loadGameFromResource("2020-infiniterecharge.json");
   public static final Game DEEP_SPACE_2019 = loadGameFromResource("2019-deepspace.json");

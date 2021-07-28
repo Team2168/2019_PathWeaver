@@ -1,0 +1,10 @@
+{
+    "game" : "2021 Infinite Recharge",
+    "field-image" : "2021-field.jpg",
+    "field-corners": {
+        "top-left" : [238, 65],
+        "bottom-right" : [2527, 1249]
+    },
+    "field-size" : [52.4375, 26.9375],
+    "field-unit" : "foot"
+}
