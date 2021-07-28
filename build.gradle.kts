@@ -1,4 +1,3 @@
-import edu.wpi.first.wpilib.versioning.ReleaseType
 import org.gradle.api.Project
 import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.jvm.tasks.Jar
@@ -19,20 +18,11 @@ plugins {
     checkstyle
     application
     pmd
-    id("edu.wpi.first.wpilib.versioning.WPILibVersioningPlugin") version "2.3"
     id("com.github.johnrengelman.shadow") version "4.0.3"
     id("com.diffplug.gradle.spotless") version "3.13.0"
 }
 
-// Ensure that the WPILibVersioningPlugin is setup by setting the release type, if releaseType wasn't
-// already specified on the command line
-if (!hasProperty("releaseType")) {
-    WPILibVersion {
-        releaseType = ReleaseType.DEV
-    }
-}
-
-version = getWPILibVersion()
+version = "19.0.1-2168"
 
 val theMainClassName = "edu.wpi.first.pathweaver.Main"
 
@@ -191,22 +181,6 @@ publishing {
                 }
             }
         }
-    }
-}
-
-/**
- * @return publishVersion property if exists, otherwise
- * [edu.wpi.first.wpilib.versioning.WPILibVersioningPluginExtension.version] value or fallback
- * if that value is the empty string.
- */
-fun getWPILibVersion(fallback: String = "0.0.0"): String {
-    if (project.hasProperty("publishVersion")) {
-        val publishVersion: String by project
-        return publishVersion
-    } else if (WPILibVersion.version != "") {
-        return WPILibVersion.version
-    } else {
-        return fallback
     }
 }
 
